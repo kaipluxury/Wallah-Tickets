@@ -93,7 +93,7 @@ client.on(Events.InteractionCreate, async interaction => {
         .setTitle("Create a Ticket")
         .setDescription("Select a category below to open a ticket.")
         .setColor("#000000")
-        .setFooter({ text: "❤Made By Kai" });
+        .setFooter({ text: "Wallah Selling | Made By Kai" });
 
       await interaction.reply({ embeds: [embed], components: [row] });
     }
@@ -117,7 +117,7 @@ client.on(Events.InteractionCreate, async interaction => {
         .setTitle("Create a Ticket")
         .setDescription("Select a category below to open a ticket.")
         .setColor("#000000")
-        .setFooter({ text: "❤Made By Kai" });
+        .setFooter({ text: "Wallah Selling | Made By Kai" });
 
       await interaction.reply({ ephemeral: true, embeds: [embed], components: [row] });
     }
@@ -141,7 +141,7 @@ client.on(Events.InteractionCreate, async interaction => {
         .setTitle("Ticket Closed")
         .setDescription(`Ticket closed by <@${closedBy.id}>`)
         .setColor("#000000")
-        .setFooter({ text: "❤Made By Kai" });
+        .setFooter({ text: "Wallah Selling | Made By Kai" });
 
       await interaction.deferUpdate();
       await channel.send({ content: "🎫 Support team ticket controls", embeds: [embed], components: [controlRow] });
@@ -161,7 +161,7 @@ client.on(Events.InteractionCreate, async interaction => {
         .setTitle("Ticket Reopened")
         .setDescription("Ticket has been reopened.")
         .setColor("#000000")
-        .setFooter({ text: "❤Made By Kai" });
+        .setFooter({ text: "Wallah Selling | Made By Kai" });
       await channel.send({ embeds: [reopenEmbed] });
     } else if (interaction.customId === "transcript-ticket") {
       if (!interaction.member.roles.cache.has(config.supportRole)) {
@@ -213,7 +213,7 @@ client.on(Events.InteractionCreate, async interaction => {
       .setTitle("Ticket Opened")
       .setDescription(`Hey <@${member.id}>!\n- <@&${config.supportRole}> will be with you shortly\n- Don't spam or ping or you may receive a warning.\n- By opening this ticket, you automatically agree with <#1357307547589152875>`)
       .setColor("#000000")
-      .setFooter({ text: "❤Made By Kai" });
+      .setFooter({ text: "Wallah Selling | Made By Kai" });
 
     await channel.send({
       content: `<@${member.id}> **Please Wait,** <@&${config.supportRole}> **Will Assist You Soon.**`,
