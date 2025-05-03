@@ -40,7 +40,7 @@ console.log("🚀 Bot starting...");
 
 client.once("ready", async () => {
   console.log(`✅ Logged in as ${client.user.tag}`);
-  client.user.setActivity("Tickets For GrandX Store", { type: 3 });
+  client.user.setActivity("Tickets For Wallah Selling", { type: 3 });
 
   const commands = [
     new SlashCommandBuilder()
