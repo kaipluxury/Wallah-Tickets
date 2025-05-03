@@ -211,7 +211,7 @@ client.on(Events.InteractionCreate, async interaction => {
 
     const embed = new EmbedBuilder()
       .setTitle("Ticket Opened")
-      .setDescription(`Hey <@${member.id}>!\n- <@&${config.supportRole}> will be with you shortly\n- Don't spam or ping or you may receive a warning.\n- By opening this ticket, you automatically agree with <#1357307547589152875>`)
+      .setDescription(`Hey <@${member.id}>!\n- <@&${config.supportRole}> will be with you shortly\n- Don't spam or ping or you may receive a warning.\n- By opening this ticket, you automatically agree with <#1367860661148712989>`)
       .setColor("#000000")
       .setFooter({ text: "Wallah Selling | Made By Kai" });
 
